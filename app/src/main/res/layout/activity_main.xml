@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_transparent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/gambar" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@android:color/transparent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/style"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/style_field"
+                android:hint="@string/usernameHint"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@android:color/transparent"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@android:color/transparent"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/style"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/style_field"
+                android:hint="@string/passwordHint"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@android:color/transparent"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/lupaPassword"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button"
+            android:elevation="24dp"
+            android:singleLine="true"
+            android:text="@string/btnLoginLabel"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="UselessLeaf">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="5dp"
+                android:text="@string/belumPunyaAkun"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Daftar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            tools:ignore="UselessLeaf">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_google_icon" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_facebook_2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_twitter" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

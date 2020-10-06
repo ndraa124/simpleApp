@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple App</string>
+    <string name="usernameLabel">Username</string>
+    <string name="usernameHint">Masukkan username</string>
+    <string name="passwordHint">Masukkan password</string>
+    <string name="passwordLabel">Password</string>
+    <string name="btnLoginLabel">Login</string>
+    <string name="lupaPassword">Lupa password?</string>
+    <string name="belumPunyaAkun">Belum punya akun?</string>
+</resources>
